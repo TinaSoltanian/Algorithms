@@ -1,0 +1,30 @@
+<!-- My solution for FizzBizz do ot hesitate to share yours if you have better one! -->
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <text id="result"> 
+
+    </text>
+</div>
+</body>
+
+<script>    
+    for (i=1; i <= 100; i++){
+        var test = "";
+        test += (i % 3 === 0 ) ? "fizz" : ""; 
+        test += (i % 5 === 0 ) ? "bizz" : "";
+
+        if (test == "") 
+           test = i;
+    document.getElementById("result").innerText = 
+                 document.getElementById("result").innerText + test + "\n";
+    }
+</script>
+</html>
